@@ -7,18 +7,18 @@
 #print years twice as old 
 #print years when he was twice as sons age
 
-fathersAge = print("Enter fathers age from 1 to 80")
+fathersAge = int(print("Enter fathers age from 1 to 80"))
 	
-sonsAge = print("Enter sons age from 1 to 80")
+sonsAge = int(print("Enter sons age from 1 to 80"))
 	
-yearsDifference = 0
-fathersAgeAgo = 0
-twiceAsOld = 0
+yearsDifference = fathersAge / (sonsAge * sonsAge)
+fathersAgeAgo = fathersAge - sonsAge
+twiceAsOld = fathersAge - (fathersAge * sonsAge)
 	
 if(fathersAge > sonsAge):
-	yearsDifference = sonsAge * 2
+	yearsDifference = sonsAge
 	sonsAge = yearsDifference
-	yearsDifference = (fathersAgeAgo - sonsAge)
+	yearsDifference = sonsAge
 	
 if(fathersAge > sonsAge):
 	twiceAsOld = fathersAge + sonsAge
